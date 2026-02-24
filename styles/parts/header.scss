@@ -3,16 +3,22 @@
 
 /* HEADER */
 
-.du_fvg_lg-site-header {
+header.du_fvg_lg-site-header {
   position: relative;
-  padding: 3rem;
+  padding: 4rem 0 0 0;
   background-color: var(--blue);
-  flex: 0 0 33%;
+  color: var(--white);
+  flex: 0 0 19.5rem;
+
+  @include smalldesktopOnly {
+    flex: 0 0 16.5rem;
+  }
 
   // Home link
   .du_fvg_lg-home-link {
-    width: 10rem;
+    width: 8.3rem;
     display: block;
+    margin-left: 2.2rem;
 
     figure,
     a {
@@ -45,7 +51,7 @@
       }
 
       .du_fvg_lg-site-nav {
-        display: flex;
+        display: block;
       }
     }
 
@@ -76,13 +82,85 @@
 
   // Main nav
   .du_fvg_lg-site-nav {
-    display: flex;
+    padding-top: 1.1rem;
+
+    @include mediaQueryAllMobilePortrait {
+      background-color: var(--blue-dark);
+    }
 
     .du_fvg_lg-menu-label {
       display: none;
 
       @include mediaQueryAllMobilePortrait {
         display: block;
+      }
+    }
+
+    ul {
+      padding: 0;
+
+      li {
+        list-style: none;
+        @include font-20pt;
+        padding: 0.45rem 2.5rem 0.3rem 0.9rem;
+
+        @include smalldesktopOnly {
+          padding: 0.45rem 1.5rem 0.3rem 0.9rem;
+        }
+
+        &.du_fvg_lg-nav-back {
+          @include font-16pt;
+          padding-bottom: 1rem;
+
+          a {
+            display: flex;
+            align-items: center;
+
+            svg {
+              flex: 0 0 0.6rem;
+              margin-right: 1rem;
+            }
+          }
+        }
+
+        &.du_fvg_lg-current-page {
+          background-color: var(--green);
+
+          a {
+            color: var(--blue-title);
+            font-weight: 700;
+          }
+        }
+
+        &.du_fvg_lg-nav-sub {
+          padding-left: 2rem
+        }
+
+        &.du_fvg_lg-nav-download {
+          font-weight: 700;
+          padding: 3.4rem 1.5rem 3.5rem .9rem;
+        }
+
+        a {
+          color: var(--white);
+          text-decoration: none;
+        }
+      }
+    }
+
+    .du_fvg_lg-assistance {
+      padding: 0 1.5rem 0.3rem 1.4rem;
+
+      a {
+        display: flex;
+        align-items: center;
+        color: var(--white);
+        text-decoration: none;
+
+        svg {
+          flex: 0 0 1.2rem;
+          margin-right: 0.8rem;
+        }
       }
     }
   }
@@ -94,7 +172,6 @@
 
     details.du_fvg_lg-nav-container[open]+.du_fvg_lg-site-nav {
       display: flex;
-      background: #ffffff;
       position: absolute;
       left: 0;
       right: 0;

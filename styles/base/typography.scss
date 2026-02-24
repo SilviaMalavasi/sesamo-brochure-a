@@ -30,10 +30,12 @@ body.du_fvg_lg-body {
   h2 {
     @include font-24pt;
     font-weight: 600;
+    padding-bottom: 1rem;
   }
 
   p {
     @include font-16pt;
+    padding-bottom: 1rem;
   }
 
   a,
@@ -46,11 +48,12 @@ body.du_fvg_lg-body {
   }
 
   ul {
-    padding: 0.5rem 0 0.5rem 1rem;
+    padding: 0.5rem 0 0.5rem 1.5rem;
 
     li {
+      list-style: square;
       @include font-16pt;
-      padding-bottom: 0.5rem;
+      padding-bottom: 1.5rem;
     }
   }
 }

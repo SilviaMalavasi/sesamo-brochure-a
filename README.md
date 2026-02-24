@@ -12,13 +12,19 @@ SCSS source and compilation
 
 - Primary SCSS source: `styles/styles.scss`.
 - Compiled stylesheet (served by the site): `styles.css` at the project root.
-- To compile locally with Dart Sass, run:
+- To compile locally with Sass, run:
 
 ```bash
  sass styles/styles.scss styles.css
 ```
 
-To watch SCSS for changes and automatically rebuild the CSS, run:
+With Autoprefixer
+
+```bash
+sass styles/styles.scss | npx postcss --use autoprefixer -o styles.css
+```
+
+Watch command:
 
 ```bash
 sass --watch styles/styles.scss:styles.css --no-source-map --style=compressed
