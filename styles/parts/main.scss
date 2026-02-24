@@ -1,0 +1,14 @@
+@use "../base/mixins" as *;
+@use "../base/media-queries" as *;
+
+/* MAIN */
+
+.du_fvg_lg-site-main {
+  flex: 0 0 66%;
+  min-height: 100vh;
+
+  .du_fvg_lg-pagination {
+    background-color: var(--blue-dark);
+    color: var(--white);
+  }
+}

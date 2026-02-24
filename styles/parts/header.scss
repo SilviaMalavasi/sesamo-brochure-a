@@ -1,0 +1,106 @@
+@use "../base/mixins" as *;
+@use "../base/media-queries" as *;
+
+/* HEADER */
+
+.du_fvg_lg-site-header {
+  position: relative;
+  padding: 3rem;
+  background-color: var(--blue);
+  flex: 0 0 33%;
+
+  // Home link
+  .du_fvg_lg-home-link {
+    width: 10rem;
+    display: block;
+
+    figure,
+    a {
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  // Burger menù toggler (use details/summary native behaviour)
+  details.du_fvg_lg-nav-container {
+    display: block;
+
+    // Open burger menu  
+    &[open] {
+      .du_fvg_lg-burger span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+
+      .du_fvg_lg-burger span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .du_fvg_lg-burger span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+
+      .du_fvg_lg-site-nav {
+        display: flex;
+      }
+    }
+
+    // Burger menu
+    summary.du_fvg_lg-burger-toggle {
+      display: none;
+
+      @include mediaQueryAllMobilePortrait {
+        display: block;
+      }
+
+      .du_fvg_lg-burger {
+        display: inline-block;
+        width: 28px;
+        height: 20px;
+        position: relative;
+
+        span {
+          display: block;
+          height: 3px;
+          background: var(--white);
+          margin: 4px 0;
+          transition: transform 180ms ease, opacity 180ms ease;
+        }
+      }
+    }
+  }
+
+  // Main nav
+  .du_fvg_lg-site-nav {
+    display: flex;
+
+    .du_fvg_lg-menu-label {
+      display: none;
+
+      @include mediaQueryAllMobilePortrait {
+        display: block;
+      }
+    }
+  }
+
+  @include mediaQueryAllMobilePortrait {
+    details.du_fvg_lg-nav-container:not([open])+.du_fvg_lg-site-nav {
+      display: none;
+    }
+
+    details.du_fvg_lg-nav-container[open]+.du_fvg_lg-site-nav {
+      display: flex;
+      background: #ffffff;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      padding: 0.5rem 1rem;
+      flex-direction: column;
+    }
+  }
+}
