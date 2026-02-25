@@ -26,7 +26,7 @@ body.du_fvg_lg-body {
       margin-bottom: 1rem;
 
       @include mediaQueryAllMobilePortrait {
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
       }
 
       h3 {
@@ -44,6 +44,10 @@ body.du_fvg_lg-body {
         align-items: center;
         justify-content: flex-end;
         padding: 0;
+
+        @include mediaQueryAllMobilePortrait {
+          flex: 0 0 8rem;
+        }
 
         svg {
           flex: 0 0 0.5rem;
