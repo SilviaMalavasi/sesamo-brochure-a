@@ -7,16 +7,26 @@ body.du_fvg_lg-body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    min-height: 100svh;
 
     .du_fvg_lg-main-content {
       display: flex;
       flex: 1;
+
+      @include mediaQueryAllMobilePortrait {
+        display: block;
+      }
 
       aside {
         flex: 0 0 40%;
         padding: 1.5rem 3.5rem;
         background-color: var(--white);
         color: var(--black-text);
+
+        @include mediaQueryAllMobilePortrait {
+          padding: 1.5rem 1rem;
+        }
 
         h1,
         h2,
@@ -33,6 +43,11 @@ body.du_fvg_lg-body {
         flex: 0 0 60%;
         background-color: var(--light-grey);
         padding: 3.5rem 4rem 3.5rem 3rem;
+
+        @include mediaQueryAllMobilePortrait {
+          padding: 1.5rem 1rem;
+          background-color: var(--white);
+        }
 
         h1,
         h2 {

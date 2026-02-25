@@ -44,7 +44,7 @@ body.du_fvg_lg-body {
 
 @include mediaQuerySmartphonesOnly {
   body.du_fvg_lg-body {
-    --root-font-size: 4.5vw;
+    --root-font-size: 5.5vw;
 
     @each $i in 16, 20, 21, 24 {
       --font-#{$i}pt: calc(var(--root-font-size) * 0.054 * #{$i});
