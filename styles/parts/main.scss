@@ -25,7 +25,7 @@ body.du_fvg_lg-body {
         color: var(--black-text);
 
         @include mediaQueryAllMobilePortrait {
-          padding: 1.5rem 1rem;
+          padding: 1.5rem 1rem 0 1rem;
         }
 
         h1,
@@ -45,7 +45,7 @@ body.du_fvg_lg-body {
         padding: 3.5rem 4rem 3.5rem 3rem;
 
         @include mediaQueryAllMobilePortrait {
-          padding: 1.5rem 1rem;
+          padding: 0 1rem 1.5rem 1rem;
           background-color: var(--white);
         }
 
@@ -53,6 +53,13 @@ body.du_fvg_lg-body {
         h2 {
           @include font-21pt;
           color: var(--blue-title);
+        }
+
+        &>h1,
+        &>h2 {
+          @include mediaQueryAllMobilePortrait {
+            display: none;
+          }
         }
 
         a {
