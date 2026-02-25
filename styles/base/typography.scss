@@ -33,6 +33,12 @@ body.du_fvg_lg-body {
     padding-bottom: 1rem;
   }
 
+  h3 {
+    @include font-21pt;
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+
   p {
     @include font-16pt;
     padding-bottom: 1rem;
