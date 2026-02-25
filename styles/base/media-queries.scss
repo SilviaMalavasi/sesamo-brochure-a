@@ -58,14 +58,14 @@ $small-desktop-max-width: 1439;
   }
 }
 
-@mixin desktopOnly {
+@mixin mediaQueryDesktopOnly {
 
   @media screen and (pointer: fine) and (hover: hover) {
     @content;
   }
 }
 
-@mixin smalldesktopOnly {
+@mixin mediaQuerySmallDesktopOnly {
 
   @media screen and (pointer: fine) and (hover: hover) and (max-width: #{$small-desktop-max-width}px) {
     @content;

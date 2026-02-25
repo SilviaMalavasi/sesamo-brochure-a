@@ -1,7 +1,7 @@
 @use "../base/media-queries" as *;
 
 @mixin focus {
-  @include desktopOnly() {
+  @include mediaQueryDesktopOnly() {
     &:focus {
       @content;
     }
@@ -9,7 +9,7 @@
 }
 
 @mixin hover {
-  @include desktopOnly() {
+  @include mediaQueryDesktopOnly() {
 
     &:hover,
     &:focus {

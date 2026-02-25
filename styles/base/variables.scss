@@ -31,7 +31,7 @@ body.du_fvg_lg-body {
   --medium-grey: #a5a4a4;
 }
 
-@include smalldesktopOnly {
+@include mediaQuerySmallDesktopOnly {
   body.du_fvg_lg-body {
     --root-font-size: calc((1vh + 4vw + 16px) * 0.245);
 

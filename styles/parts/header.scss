@@ -8,11 +8,11 @@ body.du_fvg_lg-body {
     padding: 4rem 0 0 0;
     background-color: var(--blue);
     color: var(--white);
-    flex: 0 0 23rem;
+    flex: 0 0 29rem;
     display: flex;
     flex-direction: column;
 
-    @include smalldesktopOnly {
+    @include mediaQuerySmallDesktopOnly {
       flex: 0 0 17.5rem;
     }
 
@@ -27,7 +27,11 @@ body.du_fvg_lg-body {
     .du_fvg_lg-home-link {
       width: 8.3rem;
       display: block;
-      margin-left: 2.2rem;
+      margin-left: 6.2rem;
+
+      @include mediaQuerySmallDesktopOnly {
+        margin-left: 2.2rem;
+      }
 
       @include mediaQueryAllMobilePortrait {
         margin-left: 1rem;
@@ -123,7 +127,11 @@ body.du_fvg_lg-body {
         li {
           list-style: none;
           @include font-20pt;
-          padding: 0.45rem 3rem 0.3rem 0.9rem;
+          padding: 0.45rem 3rem 0.3rem 4.9rem;
+
+          @include mediaQuerySmallDesktopOnly {
+            padding: 0.45rem 3rem 0.3rem 0.9rem;
+          }
 
           @include mediaQueryAllMobilePortrait {
             padding: 0.2rem 3rem 0.2rem 0.9rem;
@@ -162,12 +170,20 @@ body.du_fvg_lg-body {
           }
 
           &.du_fvg_lg-nav-sub {
-            padding-left: 2rem
+            padding-left: 6rem;
+
+            @include mediaQuerySmallDesktopOnly {
+              padding-left: 2rem;
+            }
           }
 
           &.du_fvg_lg-nav-download {
             font-weight: 700;
-            padding: 3.4rem 0.5rem 3.5rem .9rem;
+            padding: 3.4rem 0.5rem 3.5rem 4.9rem;
+
+            @include mediaQuerySmallDesktopOnly {
+              padding: 3.4rem 0.5rem 3.5rem 0.9rem;
+            }
 
             @include mediaQueryAllMobilePortrait {
               padding: 1.5rem 3rem 0.2rem 0.9rem;
@@ -182,7 +198,11 @@ body.du_fvg_lg-body {
       }
 
       .du_fvg_lg-assistance {
-        padding: 0 1.5rem 1rem 1.4rem;
+        padding: 0 1.5rem 1rem 4.4rem;
+
+        @include mediaQuerySmallDesktopOnly {
+          padding: 0 1.5rem 1rem 1.4rem;
+        }
 
         @include mediaQueryAllMobilePortrait {
           padding-bottom: 2rem;
