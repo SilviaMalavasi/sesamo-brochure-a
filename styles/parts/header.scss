@@ -109,6 +109,7 @@ body.du_fvg_lg-body {
       @include mediaQueryAllMobilePortrait {
         background-color: var(--blue-dark);
         padding-top: 0;
+        height: calc(100vh - 6.3rem);
         height: calc(100svh - 6.3rem);
       }
 
