@@ -21,7 +21,7 @@ body.du_fvg_lg-body {
     }
 
     @include mediaQueryAllMobilePortrait {
-      padding: 2rem 0;
+      padding: 1rem 0;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
@@ -122,8 +122,8 @@ body.du_fvg_lg-body {
       @include mediaQueryAllMobilePortrait {
         background-color: var(--blue-dark);
         padding-top: 0;
-        height: calc(100vh - 6.3rem);
-        height: calc(100svh - 6.3rem);
+        height: calc(100vh - 4.3rem);
+        height: calc(100svh - 4.3rem);
       }
 
       ul {
@@ -192,6 +192,10 @@ body.du_fvg_lg-body {
             @include mediaQueryVerySmallDesktopOnly {
               padding-left: 2rem;
             }
+
+            @include mediaQueryAllMobilePortrait {
+              padding-left: 2rem;
+            }
           }
 
           &.du_fvg_lg-nav-download {
@@ -207,7 +211,7 @@ body.du_fvg_lg-body {
             }
 
             @include mediaQueryAllMobilePortrait {
-              padding: 1.5rem 3rem 0.2rem 0.9rem;
+              padding: 1rem 3rem 0.2rem 0.9rem;
             }
           }
 
@@ -231,6 +235,7 @@ body.du_fvg_lg-body {
 
         @include mediaQueryAllMobilePortrait {
           padding-bottom: 2rem;
+          padding-left: 1rem;
         }
 
         a {
