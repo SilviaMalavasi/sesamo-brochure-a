@@ -8,12 +8,16 @@ body.du_fvg_lg-body {
     padding: 4rem 0 0 0;
     background-color: var(--blue);
     color: var(--white);
-    flex: 0 0 29rem;
+    flex: 0 0 24rem;
     display: flex;
     flex-direction: column;
 
     @include mediaQuerySmallDesktopOnly {
       flex: 0 0 17.5rem;
+    }
+
+    @include mediaQueryVerySmallDesktopOnly {
+      flex: 0 0 14.5rem;
     }
 
     @include mediaQueryAllMobilePortrait {
@@ -30,6 +34,10 @@ body.du_fvg_lg-body {
       margin-left: 6.2rem;
 
       @include mediaQuerySmallDesktopOnly {
+        margin-left: 2.2rem;
+      }
+
+      @include mediaQueryVerySmallDesktopOnly {
         margin-left: 2.2rem;
       }
 
@@ -133,6 +141,10 @@ body.du_fvg_lg-body {
             padding: 0.45rem 3rem 0.3rem 0.9rem;
           }
 
+          @include mediaQueryVerySmallDesktopOnly {
+            padding: 0.45rem 3rem 0.3rem 0.9rem;
+          }
+
           @include mediaQueryAllMobilePortrait {
             padding: 0.2rem 3rem 0.2rem 0.9rem;
           }
@@ -175,14 +187,22 @@ body.du_fvg_lg-body {
             @include mediaQuerySmallDesktopOnly {
               padding-left: 2rem;
             }
+
+            @include mediaQueryVerySmallDesktopOnly {
+              padding-left: 2rem;
+            }
           }
 
           &.du_fvg_lg-nav-download {
             font-weight: 700;
-            padding: 3.4rem 0.5rem 3.5rem 4.9rem;
+            padding: 3.4rem 1rem 3.5rem 4.9rem;
 
             @include mediaQuerySmallDesktopOnly {
-              padding: 3.4rem 0.5rem 3.5rem 0.9rem;
+              padding: 3.4rem 1rem 3.5rem 0.9rem;
+            }
+
+            @include mediaQueryVerySmallDesktopOnly {
+              padding: 3.4rem 1rem 3.5rem 0.9rem;
             }
 
             @include mediaQueryAllMobilePortrait {
@@ -201,6 +221,10 @@ body.du_fvg_lg-body {
         padding: 0 1.5rem 1rem 4.4rem;
 
         @include mediaQuerySmallDesktopOnly {
+          padding: 0 1.5rem 1rem 1.4rem;
+        }
+
+        @include mediaQueryVerySmallDesktopOnly {
           padding: 0 1.5rem 1rem 1.4rem;
         }
 

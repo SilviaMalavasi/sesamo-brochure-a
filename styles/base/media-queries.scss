@@ -1,6 +1,7 @@
 $smartphone-max-width: 480;
 $small-tablet-max-width: 768;
-$small-desktop-max-width: 1439;
+$very-small-desktop-max-width: 1599;
+$small-desktop-max-width: 1199;
 
 @mixin mediaQueryAllMobile {
   @media not all and (pointer: fine) and (hover: hover) {
@@ -68,6 +69,13 @@ $small-desktop-max-width: 1439;
 @mixin mediaQuerySmallDesktopOnly {
 
   @media screen and (pointer: fine) and (hover: hover) and (max-width: #{$small-desktop-max-width}px) {
+    @content;
+  }
+}
+
+@mixin mediaQueryVerySmallDesktopOnly {
+
+  @media screen and (pointer: fine) and (hover: hover) and (max-width: #{$very-small-desktop-max-width}px) {
     @content;
   }
 }
