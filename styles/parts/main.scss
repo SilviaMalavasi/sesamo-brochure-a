@@ -62,7 +62,7 @@ body.du_fvg_lg-body {
         justify-content: center;
 
         @include mediaQuerySmallDesktopOnly {
-          padding: 3.5rem 4rem 3.5rem 3rem;
+          padding: 3.5rem 3rem 3.5rem 3rem;
         }
 
         @include mediaQueryVerySmallDesktopOnly {
