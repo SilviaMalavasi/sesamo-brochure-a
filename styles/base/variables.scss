@@ -42,6 +42,17 @@ body.du_fvg_lg-body {
   }
 }
 
+@include mediaQueryVerySmallDesktopOnly {
+  body.du_fvg_lg-body {
+    --root-font-size: calc((1vh + 4vw + 16px) * 0.2);
+
+    @each $i in 16, 20, 21, 24 {
+      --font-#{$i}pt: calc(var(--root-font-size) * 0.054 * #{$i});
+    }
+
+  }
+}
+
 @include mediaQuerySmartphonesOnly {
   body.du_fvg_lg-body {
     --root-font-size: 5.5vw;
