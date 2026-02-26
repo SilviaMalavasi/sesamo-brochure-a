@@ -5,6 +5,8 @@
 /* BODY/COMMONS */
 .du_fvg_lg-body {
   display: flex;
+  width: 100vw;
+  width: 100svw;
 
   @include mediaQueryAllMobilePortrait {
     display: block;

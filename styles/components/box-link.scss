@@ -32,6 +32,7 @@ body.du_fvg_lg-body {
       h2,
       h3 {
         padding: 0;
+        flex: 1;
 
         @include mediaQueryAllMobilePortrait {
           font-size: var(--font-16pt) !important;
