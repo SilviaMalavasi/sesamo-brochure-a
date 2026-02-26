@@ -48,6 +48,10 @@ body.du_fvg_lg-body {
         padding: 0;
         margin-left: 2rem;
 
+        @include mediaQueryAllMobilePortrait {
+          flex: 0 0 7rem;
+          margin-left: 1rem;
+        }
 
         svg {
           flex: 0 0 0.5rem;
